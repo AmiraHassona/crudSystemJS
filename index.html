@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="css/all.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/indexstyle.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class=" w-50 shadow-lg p-5 mx-auto mt-5">
+        <h1 class="">CRUD SYSTEM</h1>
+        <label for="prodname" class="my-1">product name:</label>
+        <input type="text" class="form-control mb-3" id="prodname">
+        <label for="prodcategory" class="my-1">product category:</label>
+        <input type="text" class="form-control mb-3" id="prodcategory">
+        <label for="prodprice" class="my-1">product price:</label>
+        <input type="text" class="form-control mb-3" id="prodprice">
+        <label for="proddescr" class="my-1">product description:</label>
+        <textarea type="text" class="form-control mb-3" id="proddescr"></textarea>
+        <button id="addUpBtn" class="btn btn-info" onclick="addProduct();">add product</button>
+        <button id="updateBtn" class="btn btn-warning text-white" onclick="updateproductindex()"  >Update</button>
+
+    </div>
+
+    <input onkeyup="searchProduct() ;" type="text" class="form-control w-25 my-5 mx-auto" id=" prodsearch" placeholder="search">
+
+    <div class="container text-center">
+        <table class="table table-striped table-primary table-responsive-sm">
+            <thead class="">
+                <th>Index</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="prodtbody">
+            
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/indexjs.js"></script>
+</body>
+
+</html>

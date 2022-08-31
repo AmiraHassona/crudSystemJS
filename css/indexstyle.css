@@ -1,0 +1,12 @@
+/* start : hide update button  */
+#updateBtn
+{
+   display: none; 
+}
+/* end : hide update button  */
+/* start:color background of span (search) */
+span 
+{
+    background-color: #ffc107;
+}
+/* end:color background of span (search) */
